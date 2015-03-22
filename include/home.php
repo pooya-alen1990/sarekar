@@ -3,7 +3,7 @@
 <div class="row" id="columns_inner">
 <div id="left_column" class="col-xs-12 column" style="width:22%;">
     <div id="new-products_block_right" class="block products_block"><h4 class="title_block"><a
-            href="#" title="New products">محصولات جدید</a></h4>
+            href="#" title="New products">آخرین کارجویان</a></h4>
 
         <div class="block_content products-block">
             <ul class="products" dir="rtl">

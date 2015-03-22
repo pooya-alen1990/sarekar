@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/style.css"
     type="text/css" media="all"/>
+    
+    <!--<link rel="stylesheet" type="text/css" href="css/master.css"/>-->
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
     <!--[if IE 8]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -131,13 +133,13 @@
                         <div id="block_top_menu" class="sf-contener clearfix col-lg-12">
                             <div class="cat-title">Categories</div>
                             <ul class="sf-menu clearfix menu-content">
-                                <li><a href="#"
-                                       title="Electronics">صفحه اصلی</a>
+                                <li><a href="#" title="صفحه اصلی">صفحه اصلی</a>
                                     
                                 </li>
-                                <li><a href="#"
-                                       title="Accessories">درباه ما</a></li>
-                                <li><a href="#" title="Fashion">تماس با ما</a>
+                                <li><a href="#" title="کارجو">کارجو</a></li>
+                                <li><a href="#" title="کارفرما">کارفرما</a></li>
+                                <li><a href="#" title="درباه ما">درباه ما</a></li>
+                                <li><a href="#" title="تماس با ما">تماس با ما</a>
                                     <!--<ul>
                                         <li><a href="#" title="Men">Men</a>
                                             <ul>
@@ -207,10 +209,7 @@
                                         <li class="category-thumbnail"></li>
                                     </ul>-->
                                 </li>
-                                <li><a href="#"
-                                       title="Interiors">استخدام</a></li>
-                                <li><a href="#"
-                                       title="House Holds">مشاوره</a></li>
+                                
                             </ul>
                         </div>
                     </div>
