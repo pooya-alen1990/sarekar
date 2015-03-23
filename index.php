@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"
     type="text/css" media="all"/>
-    
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
     <!--<link rel="stylesheet" type="text/css" href="css/master.css"/>-->
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
         
@@ -61,9 +61,11 @@
         <button type="submit" class="btn btn-default">جستجو</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#">صفحه اصلی</a></li>
+        <li><a href="#">کارجو</a></li>
+        <li><a href="#">کارفرما</a></li>
+        <li><a href="#">درباره ما</a></li>
+        <li><a href="#">تماس با ما</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -73,15 +75,18 @@
 </div>
 	<div class="container-fluid header-bg1">
     <div class="col-md-10 col-md-offset-1" style="padding:0 17px;">
-		<div class=" header-bottom">
+		<div class="header-bottom">
         	<ul>
-            	<li><a href="#">ثبت نام</a></li>
-                <li><a href="#">ورود</a></li>
+            	<li><a href="#">راهنما</a></li>
+                <li><a href="#">نقشه سایت</a></li>
+                <li class="pull-left"><a><i class="fa fa-users"></i> تعداد کارجو : 1000 نفر</a></li>
+                
+                
             </ul>
         </div>
         </div>
     </div>
-
+	<div class="col-md-10 col-md-offset-1">
 <?php
 	if(isset($_GET['page'])){
 				if(is_file('include/'.$_GET['page'].'.php')){
@@ -95,7 +100,14 @@
 
 
 ?>
-
+	</div>
+    <div class="clearfix"></div>
+    <div class="footer">
+    
+    </div>
+    <div class="footer-end">
+    
+    </div>
 
 </body>
 </html>
