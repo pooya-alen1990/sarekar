@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>داروخانه</title>
+    <title>اولین وب سایت استخدام در کل کشور</title>
     <meta name="description" content="">
     <meta name="author" content="rayweb.ir | شرکت طراحی وب سایت رای وب">
     <meta name="robots" content="index,follow"/>
@@ -27,15 +27,16 @@
 <body>
 <div class="container-fluid header-bg">
 	<div class="col-md-10 col-md-offset-1">
-    	<div class="logo col-md-3">
-        	<img class="img-responsive" src="images/logo.png">
+    	<div class="logo col-md-3 text-left">
+        	<img src="images/logo.png">
         </div>
         <div class="col-md-9 top-header">
         	<ul>
             	<li><a href="?page=signup"><i class="fa fa-user"></i> ثبت نام </a></li>
                 <li><a href="#"><i class="fa fa-sign-in"></i> ورود </a></li>
             </ul>
-            <h3>اولین سایت خوب</h3>
+            <h3>اولین وب سایت استخدام در کل کشور</h3>
+            <h5>با مجوز رسمی وزرات کار، تعاون و تامین اجتماعی</h5>
         </div>
         <div class="clearfix"></div>
         <nav class="navbar navbar-default">
@@ -103,11 +104,66 @@
 	</div>
     <div class="clearfix"></div>
     <div class="footer">
-    
+    	<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            	<div>
+                   <h4>ارتباط با ما</h4>
+                   <hr class="hr-beauty">
+                   <ul>
+                        <li><i class="fa fa-taxi"></i> آدرس : خیابان شهید بهشتی ، بعد از خیابان میر عماد ، پلاک 294 ، طبقه پنجم ، واحد 501 </li>
+                        <li><i class="fa fa-phone"></i> 88759591 (5 خط) - 021 </li>
+                        <li><i class="fa fa-envelope-o"></i><a href="mailto:info@barincard.com" title="Email Us"> info@barincard.com </a></li>
+                        
+                    </ul>
+                 </div>
+            </div>
+            
+            
+            <div class="col-md-4">
+            	<div class="col">
+                    <h4>درباره ما</h4>
+                    <hr class="hr-beauty">
+                    <p align="justify">مجموعه رای وب از سال 1390 با هدف فعالیت در زمینه نرم افزار پا به عرصه وجود نهاد و به طور تخصصی فعالیت خود را به اینترنت و وب متمرکز ساخت. در این گذار ، چالش عمده ای پیش روی ما بود ، از طرفی می بایست کاری را عرضه می کردیم که در مقایسه با دیگر هم قطاران از سراسر دنیا بر یک محمل قرار گیرد ، همینطور توقعات روزافزون مشتریانمان را بر آورده سازد. </p>
+                </div>
+            </div>
+
+             <div class="col-md-4">
+             	<div class="col">
+                    <h4>لینک های مرتبط</h4>
+                    <hr class="hr-beauty">
+                    <ul>
+                    	<li><a href="/home/"><i class="fa fa-arrow-circle-o-left"></i> صفحه اصلی </a></li>
+                        <li><a href="/article/"><i class="fa fa-arrow-circle-o-left"></i> کارجو</a></li>
+                        <li><a href="/hire/"><i class="fa fa-arrow-circle-o-left"></i> کارفرما</a></li>
+                        <li><a href="/courses/"><i class="fa fa-arrow-circle-o-left"></i> درباره ما</a></li>
+                        <li><a href="/works/"><i class="fa fa-arrow-circle-o-left"></i> تماس با ما</a></li>
+                        <li><a href="/about/"><i class="fa fa-arrow-circle-o-left"></i> شرایط استفاده</a></li>
+                        <li><a href="/contact/"><i class="fa fa-arrow-circle-o-left"></i> نحوه خرید کارت</a></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="container text-center col col-social-icons">
+        <a href="https://www.facebook.com/raywebco" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://plus.google.com/communities/107271610650119455714"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <br>
+        
+        </div>
+        
+       
+         
     </div>
+    </div>
+    <div class="clearfix"></div>
     <div class="footer-end">
     	<p class="text-center">تمامی حقوق مادی و معنوی این وب سایت متعلق به شرکت یگانه نوآوران پویا می باشد.</p>
-    <p class="text-center">طراحی : <a href="http://rayweb.ir">رای وب</a></p>
+   		<p class="text-center">طراحی : <a href="http://rayweb.ir">رای وب</a></p>
     </div>
 
 </body>

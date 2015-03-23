@@ -95,10 +95,21 @@ padding-bottom: 5px;
 	}
 .footer{
 	width:100%;
-	
 	border-top:2px solid #37b3e0;
-	height:200px;
 	background-image:url(../images/body-bg1.png);
+	padding-top:30px;
+	
+	}
+.footer *{
+	color:#000;
+	}
+
+.footer ul li{
+	list-style-type:none;
+	}
+.footer ul{
+	margin:0;
+	padding:0;
 	}
 .footer-end{
 	width:100%;
@@ -142,6 +153,15 @@ padding-bottom: 5px;
 	background-image: -ms-linear-gradient(left, rgba(55,179,224,0), rgba(55,179,224,0.9), rgba(55,179,224,0.9)) !important; 
 	background-image: -o-linear-gradient(left, rgba(55,179,224,0), rgba(55,179,224,0.9), rgba(55,179,224,0.9)) !important; 
 }
+.hr-light{
+	
+	border: 0 !important; 
+	height: 1.9px !important; 
+	background-image: -webkit-linear-gradient(left, rgba(55,179,224,0), rgba(55,179,224,0.9), rgba(55,179,224,0.0)) !important; 
+	background-image: -moz-linear-gradient(left, rgba(55,179,224,0), rgba(55,179,224,0.9), rgba(55,179,224,0.0)) !important;
+	background-image: -ms-linear-gradient(left, rgba(55,179,224,0), rgba(55,179,224,0.9), rgba(55,179,224,0.0)) !important; 
+	background-image: -o-linear-gradient(left, rgba(55,179,224,0), rgba(55,179,224,0.9), rgba(55,179,224,0.0)) !important; 
+}
 .signup{
 	box-shadow:0 0 3px #ccc;
 	border-radius:4px;
@@ -173,4 +193,58 @@ padding-bottom: 5px;
 .signup ul li img{
 	height:85px;
 	
+	}
+i.fa-facebook{
+	background-color:#3a5795 !important;
+	color:#fff !important;
+	}
+i.fa-facebook:hover{
+	background-color:#fff !important;
+	color:#3a5795 !important;
+	}
+i.fa-google-plus{
+	background-color:#d34836 !important;
+	color:#fff !important;
+	}
+i.fa-google-plus:hover{
+	background-color:#fff !important;
+	color:#d34836 !important;
+	}
+i.fa-linkedin{
+	background-color:#1e88bd !important;
+	color:#fff !important;
+	}
+i.fa-linkedin:hover{
+	background-color:#ffffff !important;
+	color:#1e88bd !important;
+	}
+i.fa-instagram{
+	background-color:#517fa4 !important;
+	color:#fff !important;
+	}
+i.fa-instagram:hover{
+	background-color:#fff !important;
+	color:#517fa4 !important;
+	}
+div.footer .col.col-social-icons i {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  color: #333;
+  border-radius: 2px;
+}
+.panel p {
+	font-size:13px;
+	}
+.stat hr{
+	margin-top:2px;
+	}
+.stat h4{
+	margin-top:2px;
 	}

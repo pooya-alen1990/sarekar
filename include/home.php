@@ -17,19 +17,21 @@
         
         <div class="panel panel-default stat">
           <div class="panel-heading">
-            <h3 class="panel-title text-center">آمار سایت</h3>
+            <h2 class="panel-title text-center">آمار سایت</h2>
             
           </div>
           <div class="panel-body">
+          	<h4 class="text-center">اعضا</h4>
+            <hr class="hr-light">
             <p><i class="fa fa-arrow-left"></i> تعداد کارجویان : </p><p align="left">110</p>
             <p><i class="fa fa-arrow-left"></i> تعداد کارفرمایان :  </p><p align="left">1545</p>
             <p><i class="fa fa-arrow-left"></i> تعداد فرصت های شغلی :  </p><p align="left">48794</p>
             <p><i class="fa fa-arrow-left"></i> استخدام از طریق سایت :  </p><p align="left">215120</p>
           </div>
-           <div class="panel-heading no-redius">
-            <h3 class="panel-title text-center">آمار بازدید کنندگان</h3>
+           <h4 class="text-center">وب سایت</h4>
+            <hr class="hr-light">
             
-          </div>
+          
           <div class="panel-body">
             <p><i class="fa fa-arrow-left"></i> تعداد افراد آنلاین :</p><p align="left">110</p>
             <p><i class="fa fa-arrow-left"></i> بازدید کنندگان امروز :  </p><p align="left">1545</p>
