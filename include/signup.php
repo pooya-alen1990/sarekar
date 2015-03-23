@@ -41,10 +41,34 @@
         </div>
     </div>
     
-	<div class="col-md-8">
-    	<div>
-        	<h3>ثبت نام</h3>
+	<div class="col-md-8 signup">
+    	<div class="col-xs-12">
+        	<h3>ثبت نام کارجو</h3>
             <hr class="hr-beauty">
+        	<ul class="text-center">
+            	<li><img class="img-responsive" src="images/step1_blue.png"></li>
+                <li><img class="img-responsive" src="images/step2_grey.png"></li>
+                <li><img class="img-responsive" src="images/step3_grey.png"></li>
+                <li><img class="img-responsive" src="images/step4_grey.png"></li>
+                <li><img class="img-responsive" src="images/step5_grey.png"></li>
+                <li><img class="img-responsive" src="images/step6_grey.png"></li>
+                
+            </ul>
+    	<div>
+        	
+            
+            	<form method="post" autocomplete="on" role="form" class="form-horizontal" dir="rtl">
+			<div class="form-group">
+            	<label for="activation_code" class="col-sm-2 col-xs-12  control-label pull-right">کد فعالسازی : </label>
+                <div class="col-sm-8 col-xs-12 pull-right">
+                	<input align="baseline" class="form-control" lang="fa" d type="text" name="activation_code" value="" tabindex="1" autofocus>
+                </div>  
+            </div>
+            <div class="col-xs-12 text-center">
+            	<input type="submit" name="go_register" class="btn btn-success " id="go_register" value="تایید و ادامه >>" tabindex="18" >
+            </div>
+            </form>
         </div>
     </div>
+</div>
 </div>
