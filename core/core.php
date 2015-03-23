@@ -48,3 +48,5 @@ function steps($step,$number){
 
 ##### includes #####
 include 'counter.php';
+include 'jdf.php';
+include 'messages/msg.php';
