@@ -9,10 +9,11 @@
 	font-style:normal;
 }
 body{
-	background-color:#fcfcfc;
+	
 	font-family:koodak;
 	direction:rtl;
 	font-size:16px;
+	background-image:url(../images/body-bg.png);
 	}
 .logo{
 	padding-top:10px;
@@ -53,7 +54,7 @@ background: linear-gradient(to bottom, #37B3E0 0px, #0A92D7 100%) repeat scroll 
 	color:#fff;
 	}
 .header-bg{
-	background: #eee;
+	background-image:url(../images/body-bg1.png);
 border-bottom: 1px solid #ECE7DC;
 	}
 .header-bottom{
@@ -81,7 +82,7 @@ border-radius: 0px 0px 5px 5px;
 
 	}
 .header-bg1{
-	background: none repeat scroll 0% 0% #F4F1E7;
+	background-image:url(../images/body-bg2.png);
 border-top: 1px solid #FFF;
 padding-bottom: 5px;
 	}
@@ -93,14 +94,15 @@ padding-bottom: 5px;
 	}
 .footer{
 	width:100%;
-	background: linear-gradient(to bottom, #efebdd 0px, #f6f4ed 66%, #ebe7d9 100%) repeat scroll 0 0 transparent;
+	
 	border-top:1px solid #37b3e0;
 	height:200px;
+	background-image:url(../images/body-bg1.png);
 	}
 .footer-end{
 	width:100%;
-	background-color:#bebbae;
 	height:50px;
+	background-image:url(../images/body-bg2.png);
 	}
 .panel-default > .panel-heading{
 	background: linear-gradient(to bottom, #37b3e0 0px, #0a92d7 100%) repeat scroll 0 0 transparent;
