@@ -1,6 +1,6 @@
 <?php
 $expire = 1;
-$filename = "counter.txt";
+$filename = "core/counter.txt";
  
 if (file_exists($filename))
 {
@@ -168,16 +168,3 @@ if (file_exists($filename))
    }
 }
 ?>
-
-
-<?php echo $online; ?>
-
-<?php echo $day; ?>
-	
-<?php echo $week; ?>
-	
-<?php echo $month; ?>
-	
-<?php echo $year; ?>
-	
-<?php echo $all; ?>

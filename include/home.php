@@ -30,15 +30,13 @@
           </div>
            <h4 class="text-center">وب سایت</h4>
             <hr class="hr-light">
-            
-          
           <div class="panel-body">
-            <p><i class="fa fa-arrow-left"></i> تعداد افراد آنلاین :</p><p align="left">110</p>
-            <p><i class="fa fa-arrow-left"></i> بازدید کنندگان امروز :  </p><p align="left">1545</p>
-            <p><i class="fa fa-arrow-left"></i> بازدیدکنندگان این هفته :  </p><p align="left">48794</p>
-            <p><i class="fa fa-arrow-left"></i> بازدید کنندگان این ماه :  </p><p align="left">215120</p>
-            <p><i class="fa fa-arrow-left"></i> بازدید کنندگان این سال :  </p><p align="left">215120</p>
-            <p><i class="fa fa-arrow-left"></i> بازدید کل :  </p><p align="left">215120</p>
+            <p><i class="fa fa-arrow-left"></i> تعداد افراد آنلاین :</p><p align="left"><?php echo $online; ?></p>
+            <p><i class="fa fa-arrow-left"></i> بازدید کنندگان امروز :  </p><p align="left"><?php echo $day; ?></p>
+            <p><i class="fa fa-arrow-left"></i> بازدیدکنندگان این هفته :  </p><p align="left"><?php echo $week; ?></p>
+            <p><i class="fa fa-arrow-left"></i> بازدید کنندگان این ماه :  </p><p align="left"><?php echo $month; ?></p>
+            <p><i class="fa fa-arrow-left"></i> بازدید کنندگان این سال :  </p><p align="left"><?php echo $year; ?></p>
+            <p><i class="fa fa-arrow-left"></i> بازدید کل :  </p><p align="left"><?php echo $all; ?></p>
           </div>
         </div>
     </div>

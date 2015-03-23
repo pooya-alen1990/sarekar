@@ -1,24 +1,3 @@
-<?php 
-session_start(); 
-
-if(!isset($_SESSION['signup_users'])){
-				$_SESSION['signup_users'] = 1;
-			}
-			
-			$step = $_SESSION['signup_users'];
-			
-			
-function steps($step,$number){
-					if($step > $number){
-						echo '<li><img class="img-responsive" src="images/step'.$number.'_green.png"></li>';
-						}elseif($step == $number){
-						echo '<li><img class="img-responsive" src="images/step'.$number.'_blue.png"></li>';	
-							}elseif($step < $number){
-						echo '<li><img class="img-responsive" src="images/step'.$number.'_grey.png"></li>';	
-					}
-				}
-
-?>
 <div class="home">
 	<div class="col-md-4">
     	<div class="panel panel-default">
