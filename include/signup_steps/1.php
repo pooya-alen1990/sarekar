@@ -10,11 +10,9 @@ if(isset($_POST['go_register'])){
 
 	if(isset($activation_row['activation_code']) && $activation_row['register_date'] == 0){
 		
+		$_SESSION['signup_users'] = 2;
+		header('Location: ?page=signup');
 		
-		
-				
-		//$_SESSION['signup_users'] = 2;
-		//header('Location: ?page=signup');
 	}else{
 			$error = CODE_FAALSAZI;
 	}
