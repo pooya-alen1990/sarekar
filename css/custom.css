@@ -12,6 +12,7 @@ body{
 	background-color:#fcfcfc;
 	font-family:koodak;
 	direction:rtl;
+	font-size:16px;
 	}
 .logo{
 	padding-top:10px;
@@ -31,7 +32,7 @@ body{
 	}
 .top-header ul li a{
 	display:inline-block;
-	width:50px;
+	width:70px;
 	text-decoration:none;
 
 	}
@@ -52,7 +53,7 @@ background: linear-gradient(to bottom, #37B3E0 0px, #0A92D7 100%) repeat scroll 
 	color:#fff;
 	}
 .header-bg{
-	background: linear-gradient(to bottom, #EFEBDD 0px, #F6F4ED 66%, #EBE7D9 100%) repeat scroll 0% 0% transparent;
+	background: #eee;
 border-bottom: 1px solid #ECE7DC;
 	}
 .header-bottom{
@@ -103,4 +104,25 @@ padding-bottom: 5px;
 	}
 .panel-default > .panel-heading{
 	background: linear-gradient(to bottom, #37b3e0 0px, #0a92d7 100%) repeat scroll 0 0 transparent;
+	}
+.stat{
+	margin-top:20px;
+	}
+.stat p {
+	display:inline-block;
+	width:50%;
+	}
+.panel-title{
+	color:#fff;
+	}
+.no-redius{
+	border-radius:0;
+	}
+.last-user p{
+	display:inline-block;
+	width:50%;
+	}
+.last-user p[align=left]{
+	color:#999;
+	font-size:12px;
 	}

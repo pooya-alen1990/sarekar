@@ -32,8 +32,8 @@
         </div>
         <div class="col-md-9 top-header">
         	<ul>
-            	<li><a href="#">ثبت نام</a></li>
-                <li><a href="#">ورود</a></li>
+            	<li><a href="#"><i class="fa fa-user"></i> ثبت نام </a></li>
+                <li><a href="#"><i class="fa fa-sign-in"></i> ورود </a></li>
             </ul>
             <h3>اولین سایت خوب</h3>
         </div>
@@ -56,7 +56,7 @@
      
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="جستجو">
         </div>
         <button type="submit" class="btn btn-default">جستجو</button>
       </form>
