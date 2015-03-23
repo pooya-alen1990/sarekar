@@ -53,22 +53,16 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="images/slider/pic1.jpg" alt="...">
-              <div class="carousel-caption">
-               sdsds
-              </div>
+              <img src="images/slider/pic1.jpg">
+              
             </div>
             <div class="item">
-              <img src="images/slider/pic2.jpg" alt="...">
-              <div class="carousel-caption">
-                ...
-              </div>
+              <img src="images/slider/pic2.jpg">
+             
             </div>
             <div class="item">
-              <img src="images/slider/pic3.jpg" alt="...">
-              <div class="carousel-caption">
-                ...
-              </div>
+              <img src="images/slider/pic3.jpg">
+              
             </div>
           </div>
         
