@@ -32,7 +32,7 @@
         </div>
         <div class="col-md-9 top-header">
         	<ul>
-            	<li><a href="#"><i class="fa fa-user"></i> ثبت نام </a></li>
+            	<li><a href="?page=signup"><i class="fa fa-user"></i> ثبت نام </a></li>
                 <li><a href="#"><i class="fa fa-sign-in"></i> ورود </a></li>
             </ul>
             <h3>اولین سایت خوب</h3>
@@ -61,11 +61,11 @@
         <button type="submit" class="btn btn-default">جستجو</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">صفحه اصلی</a></li>
-        <li><a href="#">کارجو</a></li>
-        <li><a href="#">کارفرما</a></li>
-        <li><a href="#">درباره ما</a></li>
-        <li><a href="#">تماس با ما</a></li>
+        <li class="pull-right"><a href="#">صفحه اصلی</a></li>
+        <li class="pull-right"><a href="#">کارجو</a></li>
+        <li class="pull-right"><a href="#">کارفرما</a></li>
+        <li class="pull-right"><a href="#">درباره ما</a></li>
+        <li class="pull-right"><a href="#">تماس با ما</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -106,7 +106,8 @@
     
     </div>
     <div class="footer-end">
-    
+    	<p class="text-center">تمامی حقوق مادی و معنوی این وب سایت متعلق به شرکت یگانه نوآوران پویا می باشد.</p>
+    <p class="text-center">طراحی : <a href="http://rayweb.ir">رای وب</a></p>
     </div>
 
 </body>
