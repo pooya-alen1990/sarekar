@@ -1,3 +1,24 @@
+<?php 
+session_start(); 
+
+if(!isset($_SESSION['signup_users'])){
+				$_SESSION['signup_users'] = 1;
+			}
+			
+			$step = $_SESSION['signup_users'];
+			
+			
+function steps($step,$number){
+					if($step > $number){
+						echo '<li><img class="img-responsive" src="images/step'.$number.'_green.png"></li>';
+						}elseif($step == $number){
+						echo '<li><img class="img-responsive" src="images/step'.$number.'_blue.png"></li>';	
+							}elseif($step < $number){
+						echo '<li><img class="img-responsive" src="images/step'.$number.'_grey.png"></li>';	
+					}
+				}
+
+?>
 <div class="home">
 	<div class="col-md-4">
     	<div class="panel panel-default">
@@ -46,28 +67,17 @@
         	<h3>ثبت نام کارجو</h3>
             <hr class="hr-beauty">
         	<ul class="text-center">
-            	<li><img class="img-responsive" src="images/step1_blue.png"></li>
-                <li><img class="img-responsive" src="images/step2_grey.png"></li>
-                <li><img class="img-responsive" src="images/step3_grey.png"></li>
-                <li><img class="img-responsive" src="images/step4_grey.png"></li>
-                <li><img class="img-responsive" src="images/step5_grey.png"></li>
-                <li><img class="img-responsive" src="images/step6_grey.png"></li>
-                
+            <?php
+				steps($step,1);
+				steps($step,2);
+				steps($step,3);
+				steps($step,4);
+				steps($step,5);
+				steps($step,6);
+			?> 
             </ul>
     	<div>
-        	
-            
-            	<form method="post" autocomplete="on" role="form" class="form-horizontal" dir="rtl">
-			<div class="form-group">
-            	<label for="activation_code" class="col-sm-2 col-xs-12  control-label pull-right">کد فعالسازی : </label>
-                <div class="col-sm-8 col-xs-12 pull-right">
-                	<input align="baseline" class="form-control" lang="fa" d type="text" name="activation_code" value="" tabindex="1" autofocus>
-                </div>  
-            </div>
-            <div class="col-xs-12 text-center">
-            	<input type="submit" name="go_register" class="btn btn-success " id="go_register" value="تایید و ادامه >>" tabindex="18" >
-            </div>
-            </form>
+            <?php include("include/signup_steps/$step.php"); ?>
         </div>
     </div>
 </div>
