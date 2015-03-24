@@ -17,9 +17,9 @@ if(isset($_POST['go_register'])){
 	$jobs_result = mysqli_query($connection,$jobs_query);
 
 	if($jobs_result){
-		echo 'ok';
-		//$_SESSION['signup_users'] = 5;
-		//header('Location: ?page=signup');
+		
+		$_SESSION['signup_users'] = 5;
+		header('Location: ?page=signup');
 		
 	}else{
 		$error = SIGNUP_FAILED;
@@ -47,15 +47,15 @@ if(isset($_POST['go_register'])){
   
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
-        <input type="text" class="form-control"  name="job_duration" required>
+        <input type="text" class="form-control"  name="job_duration" placeholder="مثلا : 12" required>
         <span class="input-group-addon">(مدت (ماه</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
-        <input type="text" class="form-control"  name="job_last_salary" required>
-        <span class="input-group-addon">آخرین حقوق دریافتی</span>
+        <input type="text" class="form-control"  name="job_last_salary" placeholder="مثلا : 1000000" required>
+        <span class="input-group-addon">(آخرین حقوق دریافتی (تومان</span>
     </div>
   </div>
   
