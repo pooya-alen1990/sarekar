@@ -177,7 +177,7 @@ background-color:rgba(255,137,0,0.3);
 	height:40px;
 	padding-top:10px;
 	}	
-.signup input{
+.signup input.faal{
 	text-align:center !important;
 	}
 .signup ul li {
@@ -252,7 +252,13 @@ div.footer .col.col-social-icons i {
 .fa{
 	color:#ff8900
 	}
-.home-content{
+.margin-bottom-20{
+	margin-bottom:20px;
+	}
+.form-control{
+	direction:rtl;
+	text-align:right;
+	}.home-content{
 	margin-top:50px;
 	box-shadow:0 0 3px #ccc;
 	border-radius:4px;

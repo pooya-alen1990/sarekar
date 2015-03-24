@@ -21,37 +21,79 @@ if(isset($_POST['go_register'])){
 
 ?>
 <?php echo $error; ?>
-<form method="post" role="form" class="form-horizontal" dir="rtl">
+<form method="post" role="form" class="form-horizontal" dir="ltr">
     
-    <div class="form-group">
-            <label for="phone" class="col-sm-2 control-label pull-right">نام :</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control pull-right" name="phone" required>
-            </div>
-            <label for="mobile" class="col-sm-2 control-label">نام خانوادگی :</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control pull-right" name="mobile" required>
-            </div>
+  <div class="col-md-6 col-md-push-6 margin-bottom-20">
+    <div class="input-group">
+        <input type="text" class="form-control" name="first_name" required autofocus>
+        <span class="input-group-addon">نام</span>
     </div>
-    
-    <div class="form-group">
-            <label for="phone" class="col-sm-2 control-label pull-right">جنسیت :</label>
-            <div class="col-sm-4">
-              <select class="form-control" type="text" name="activation_code" tabindex="1" autofocus>
+  </div>
+  
+   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
+    <div class="input-group">
+        <input type="text" class="form-control"  name="last_name" required>
+        <span class="input-group-addon">نام خانوادگی</span>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-md-push-6 margin-bottom-20">
+    <div class="input-group">
+        <input type="text" class="form-control"  name="melli_code" required>
+        <span class="input-group-addon">کد ملی</span>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-md-pull-6 margin-bottom-20">
+    <div class="input-group">
+        <input type="password" class="form-control"  name="password" required>
+        <span class="input-group-addon">کلمه عبور</span>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-6 col-md-push-6 margin-bottom-20">
+    <div class="input-group">
+        <select class="form-control" type="text" name="religion">
+            	<option>اسلام</option>
+                <option>مسیحیت</option>
+       </select>
+        <span class="input-group-addon">مذهب</span>
+    </div>
+  </div>
+  
+   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
+    <div class="input-group">
+        <select class="form-control" type="text" name="gender">
             	<option>مرد</option>
                 <option>زن</option>
-              </select>
-            </div>
-            <label for="mobile" class="col-sm-2 control-label">مذهب :</label>
-            <div class="col-sm-4">
-              <select class="form-control" type="text" name="activation_code" tabindex="1" autofocus>
-            	<option>اسلام</option>
-                <option>مسحیت</option>
-              </select>
-            </div>
+        </select>
+        <span class="input-group-addon">جنسیت</span>
     </div>
+  </div>
+  
+   <div class="col-md-6 col-md-push-6 margin-bottom-20">
+    <div class="input-group">
+        <select class="form-control" type="text" name="marriage_state">
+            	<option>مجرد</option>
+                <option>متاهل</option>
+       </select>
+        <span class="input-group-addon">وضعیت تاهل</span>
+    </div>
+  </div>
+  
+   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
+    <div class="input-group">
+        <select class="form-control" type="text" name="soldiering_state">
+            	<option>رفته ام</option>
+                <option>معاف</option>
+                <option>نرفته ام</option>
+        </select>
+        <span class="input-group-addon">خدمت سربازی</span>
+    </div>
+  </div>
 
-    <div class="col-xs-12 text-center">
-        <input type="submit" name="go_register" class="btn btn-success " value="تایید و ادامه >>" tabindex="2" >
+    <div class="col-xs-12 text-center margin-bottom-20">
+        <input type="submit" name="go_register" class="btn btn-success " value="تایید و ادامه >>" >
     </div>
 </form>
