@@ -60,14 +60,14 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="جستجو">
         </div>
-        <button type="submit" class="btn btn-default">جستجو</button>
+        <button type="submit" class="btn btn-default submit">جستجو</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="pull-right"><a href="#">صفحه اصلی</a></li>
         <li class="pull-right"><a href="#">کارجو</a></li>
         <li class="pull-right"><a href="#">کارفرما</a></li>
         <li class="pull-right"><a href="#">درباره ما</a></li>
-        <li class="pull-right"><a href="#">تماس با ما</a></li>
+        <li class="pull-right"><a href="?page=contact">تماس با ما</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
