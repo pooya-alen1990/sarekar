@@ -20,15 +20,14 @@ if(isset($_POST['go_register'])){
 	$website = $_POST['website'];
 	$city_id = $_POST['city_id'];
 	
-	$users_query = "UPDATE `users` SET `mobile`='$mobile',`tel`='$tel',`address`='$address',`email`='$email',
-													`website`='$website',`city_id`='$city_id' WHERE `id` = '$id' ; ";
+	$jobs_query = "INSERT INTO `jobs`(`jobs_id`, `user_id`, `job_name`, `job_position`, `job_duration`, `job_last_salary`, `job_exit_cause`, `job_tel`) VALUES ('','$id','$job_name','$job_position','$job_duration','$job_last_salary','$job_exit_cause','$job_tel') ; ";
 										
-	$users_result = mysqli_query($connection,$users_query);
+	$jobs_result = mysqli_query($connection,$jobs_query);
 
-	if($users_result){
-		
-		$_SESSION['signup_users'] = 4;
-		header('Location: ?page=signup');
+	if($jobs_result){
+		echo 'ok';
+		//$_SESSION['signup_users'] = 5;
+		//header('Location: ?page=signup');
 		
 	}else{
 		$error = SIGNUP_FAILED;
@@ -43,67 +42,48 @@ if(isset($_POST['go_register'])){
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
         <input type="text" class="form-control" name="mobile" required autofocus>
-        <span class="input-group-addon">موبایل</span>
+        <span class="input-group-addon">نام آخرین شرکت</span>
     </div>
   </div>
   
    <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
         <input type="text" class="form-control"  name="tel" required>
-        <span class="input-group-addon">تلفن</span>
+        <span class="input-group-addon">سمت</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
         <input type="text" class="form-control"  name="website" required>
-        <span class="input-group-addon">وب سایت</span>
+        <span class="input-group-addon">(مدت (ماه</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
         <input type="email" class="form-control"  name="email" required>
-        <span class="input-group-addon">ایمیل</span>
+        <span class="input-group-addon">آخرین حقوق دریافتی</span>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-md-push-6 margin-bottom-20">
+    <div class="input-group">
+        <input type="text" class="form-control"  name="website" required>
+        <span class="input-group-addon">دلیل خروج</span>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-md-pull-6 margin-bottom-20">
+    <div class="input-group">
+        <input type="email" class="form-control"  name="email" required>
+        <span class="input-group-addon">تلفن محل کار</span>
     </div>
   </div>
 
-  <div class="col-md-6 col-md-push-6 margin-bottom-20">
-    <div class="input-group">
-        <select class="form-control" name="province_id" id="province">
-      	<option value="-1">استان را انتخاب کنید</option>
-        <?php echo $provinces; ?>
-      	</select>
-        <span class="input-group-addon">استان</span>
-    </div>
-  </div>
   
-   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
-    <div class="input-group">
-        <select class="form-control" disabled name="city_id" id="city" required>
-      	</select>
-        <span class="input-group-addon">شهر</span>
-    </div>
-  </div>
-  
-  <div class="col-md-12 margin-bottom-20">
-    <div class="input-group">
-        <input type="text" class="form-control" name="address" required>
-        <span class="input-group-addon">آدرس</span>
-    </div>
-  </div>
 
     <div class="col-xs-12 text-center margin-bottom-20">
         <input type="submit" name="go_register" class="btn btn-warning submit " value="تایید و ادامه " >
     </div>
 </form>
-<script>
-	$("#province").change(function(){
-		val = $("#province").val();
-    $.post("include/signup_steps/province_ajax.php",{province : val},
-    function(data, status){
-		$('#city').removeAttr('disabled');
-		$('#city').html(data);
-    });
-});	
-</script>
