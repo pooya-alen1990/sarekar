@@ -88,6 +88,7 @@
         </div>
         </div>
     </div>
+    
 	<div class="col-md-10 col-md-offset-1">
 <?php
 	if(isset($_GET['page'])){
@@ -166,6 +167,20 @@
     	<p class="text-center">تمامی حقوق مادی و معنوی این وب سایت متعلق به شرکت یگانه نوآوران پویا می باشد.</p>
    		<p class="text-center">طراحی : <a href="http://rayweb.ir">رای وب</a></p>
     </div>
+<a class="top_button" href="#" style="display:none;">&nbsp;</a>
+<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 500) {
+			$('.top_button').fadeIn(500);
+		} else {
+			$('.top_button').fadeOut(500);
+		}
+	});							
+	$('.top_button').click(function(event) {
+		event.preventDefault();		
+		$('html, body').animate({scrollTop: 0}, 800);
+	});	
 
+</script>
 </body>
 </html>

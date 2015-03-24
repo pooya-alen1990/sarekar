@@ -5,10 +5,10 @@
             <h3 class="panel-title text-center">آخرین کارجویان</h3>
           </div>
           <div class="panel-body last-user">
-            <p><i class="fa fa-male"></i> اصغر فرهادی </p><p align="left">2 فروردین 1393</p>
-            <p><i class="fa fa-female"></i> لیلا حاتمی </p><p align="left">6 دی 1923</p>
-            <p><i class="fa fa-male"></i> مهرداد پارسا </p><p align="left">110</p>
-            <p><i class="fa fa-female"></i> پویا صبرآموز </p><p align="left">110</p>
+            <p><i class="fa fa-male"></i><a href="#"> اصغر فرهادی </a></p><p align="left">2 فروردین 1393</p>
+            <p><i class="fa fa-female"></i><a href="#"> لیلا حاتمی </a></p><p align="left">6 دی 1923</p>
+            <p><i class="fa fa-male"></i><a href="#"> مهرداد پارسا </a></p><p align="left">110</p>
+            <p><i class="fa fa-female"></i><a href="#"> پویا صبرآموز </a></p><p align="left">110</p>
           </div>
         </div>
         <div>
@@ -77,4 +77,11 @@
           </a>
         </div>
     </div>
-</div>
+    <div class="col-md-8 home-content">
+    	
+        	<h3>کارتهای رایگان سر کار!</h3>
+            <hr class="hr-beauty">
+            <p>با خرید کارتهای استخدام، همین امروز شغل خود را انتخاب نمایید</p>
+      </div>
+      </div>  	
+           

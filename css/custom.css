@@ -114,9 +114,9 @@ background-color:rgba(255,137,0,0.3);
 	}
 .footer-end{
 	width:100%;
-
+	background-color:rgba(255,137,0,0.3);
 	background-image:url(../images/body-bg2.png);
-	border-bottom:2px solid #ff8900;
+	border-bottom:2px solid #37b3e0;
 	}
 .panel-default > .panel-heading{
 	background: linear-gradient(to bottom, #37b3e0 0px, #0a92d7 100%) repeat scroll 0 0 transparent;
@@ -251,4 +251,24 @@ div.footer .col.col-social-icons i {
 	}
 .fa{
 	color:#ff8900
+	}
+.home-content{
+	margin-top:50px;
+	box-shadow:0 0 3px #ccc;
+	border-radius:4px;
+	background-color:#fff;
+	}
+.top_button{
+	background: url("../images/back_to_top.png") no-repeat scroll 0 0 transparent;
+    bottom: 9px;
+    display: none;
+    height: 34px;
+    position: fixed;
+    right: 10px;
+    width: 34px;
+    z-index: 95;
+	}
+.collapse button{
+	background-color:rgba(255,137,0,0.9);
+	color:#fff;
 	}
