@@ -2,19 +2,31 @@
 $error = '';
 if(isset($_POST['go_register'])){
 	
-	$activation_code = $_POST['activation_code'];
+	$id = $_SESSION['user_id'];
 	
-	$activation_query = "SELECT * FROM users WHERE activation_code = '$activation_code' LIMIT 1 ; ";
-	$activation_result = mysqli_query($connection,$activation_query);
-	$activation_row = mysqli_fetch_assoc($activation_result);
+	$first_name = $_POST['first_name'];
+	$last_name = $_POST['last_name'];
+	$melli_code = $_POST['melli_code'];
+	$password = $_POST['password'];
+	$religion = $_POST['religion'];
+	$gender = $_POST['gender'];
+	$soldiering_state = $_POST['soldiering_state'];
+	$marriage_state = $_POST['marriage_state'];
+	
+	$users_query = "UPDATE `users` SET `first_name`='$first_name',`last_name`='$last_name', 
+						`melli_code`='$melli_code',`password`=SHA1('$password'),`religion`='$religion',`gender`='$gender', 
+								`soldiering_state`='$soldiering_state' ,`marriage_state`='$marriage_state'
+										WHERE `id` = '$id' ; ";
+										
+	$users_result = mysqli_query($connection,$users_query);
 
-	if(isset($activation_row['activation_code']) && $activation_row['register_date'] == 0){
+	if($users_result){
 		
-		//$_SESSION['signup_users'] = 3;
-		//header('Location: ?page=signup');
+		$_SESSION['signup_users'] = 3;
+		header('Location: ?page=signup');
 		
 	}else{
-			$error = CODE_FAALSAZI;
+		$error = SIGNUP_FAILED;
 	}
 
 }
@@ -50,8 +62,7 @@ if(isset($_POST['go_register'])){
         <span class="input-group-addon">کلمه عبور</span>
     </div>
   </div>
-  
-  
+
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
         <select class="form-control" type="text" name="religion">

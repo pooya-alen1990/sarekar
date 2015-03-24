@@ -11,6 +11,7 @@ if(isset($_POST['go_register'])){
 	if(isset($activation_row['activation_code']) && $activation_row['register_date'] == 0){
 		
 		$_SESSION['signup_users'] = 2;
+		$_SESSION['user_id'] = $activation_row['id'];
 		header('Location: ?page=signup');
 		
 	}else{
