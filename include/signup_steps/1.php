@@ -30,6 +30,6 @@ if(isset($_POST['go_register'])){
         </div>  
     </div>
     <div class="col-xs-12 text-center">
-        <input type="submit" name="go_register" class="btn btn-success " value="تایید و ادامه >>" tabindex="2" >
+        <input type="submit" name="go_register" class="btn btn-warning submit " value="تایید و ادامه" tabindex="2" >
     </div>
 </form>

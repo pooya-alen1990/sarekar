@@ -1,24 +1,16 @@
 <?php
-$error = '';
-
-$provinces = '';
-$provinces_query = " SELECT * FROM `province`" ;
-$provinces_result = mysqli_query($connection,$provinces_query);
-while($provinces_row = mysqli_fetch_assoc($provinces_result)){
-		$provinces .="<option value='$provinces_row[id]'>$provinces_row[name]</a>";
-	}
-	
+$error = '';	
 	
 if(isset($_POST['go_register'])){
 	
 	$id = $_SESSION['user_id'];
 	
-	$mobile = $_POST['mobile'];
-	$tel = $_POST['tel'];
-	$address = $_POST['address'];
-	$email = $_POST['email'];
-	$website = $_POST['website'];
-	$city_id = $_POST['city_id'];
+	$job_name = $_POST['job_name'];
+	$job_position = $_POST['job_position'];
+	$job_duration = $_POST['job_duration'];
+	$job_last_salary = $_POST['job_last_salary'];
+	$job_exit_cause = $_POST['job_exit_cause'];
+	$job_tel = $_POST['job_tel'];
 	
 	$jobs_query = "INSERT INTO `jobs`(`jobs_id`, `user_id`, `job_name`, `job_position`, `job_duration`, `job_last_salary`, `job_exit_cause`, `job_tel`) VALUES ('','$id','$job_name','$job_position','$job_duration','$job_last_salary','$job_exit_cause','$job_tel') ; ";
 										
@@ -41,42 +33,42 @@ if(isset($_POST['go_register'])){
     
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
-        <input type="text" class="form-control" name="mobile" required autofocus>
+        <input type="text" class="form-control" name="job_name" required autofocus>
         <span class="input-group-addon">نام آخرین شرکت</span>
     </div>
   </div>
   
    <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
-        <input type="text" class="form-control"  name="tel" required>
+        <input type="text" class="form-control"  name="job_position" required>
         <span class="input-group-addon">سمت</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
-        <input type="text" class="form-control"  name="website" required>
+        <input type="text" class="form-control"  name="job_duration" required>
         <span class="input-group-addon">(مدت (ماه</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
-        <input type="email" class="form-control"  name="email" required>
+        <input type="text" class="form-control"  name="job_last_salary" required>
         <span class="input-group-addon">آخرین حقوق دریافتی</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
-        <input type="text" class="form-control"  name="website" required>
+        <input type="text" class="form-control"  name="job_exit_cause" required>
         <span class="input-group-addon">دلیل خروج</span>
     </div>
   </div>
   
   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
-        <input type="email" class="form-control"  name="email" required>
+        <input type="text" class="form-control"  name="job_tel" required>
         <span class="input-group-addon">تلفن محل کار</span>
     </div>
   </div>
