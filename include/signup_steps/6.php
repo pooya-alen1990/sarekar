@@ -12,18 +12,18 @@ if(isset($_POST['go_register'])){
 	
 	$id = $_SESSION['user_id'];
 	
-	$education_level = $_POST['education_level'];
-	$education_average = $_POST['education_average'];
-	$education_university = $_POST['education_university'];
-	$education_branch = $_POST['education_branch'];
-	$education_sub_branch = $_POST['education_sub_branch'];
-	$education_graduation_date = $_POST['education_graduation_date'];
+	$job_kind = $_POST['job_kind'];
+	$province_id_2 = $_POST['province_id_2'];
+	$job_state = $_POST['job_state'];
+	$salary = $_POST['salary'];
+	$register_date = time();
 	
-	$educations_query = "INSERT INTO `educations`(`education_id`, `user_id`, `education_level`, `education_average`, `education_university`, `education_branch`, `education_sub_branch`, `education_graduation_date`) VALUES ('','$id','$education_level','$education_average','$education_university','$education_branch','$education_sub_branch','$education_graduation_date') ; ";
+	$users_query = "UPDATE `users` SET `job_state`='$job_state',`job_kind`='$job_kind',`salary`='$salary',`province_id_2`='$province_id_2',`register_date`='$register_date' WHERE `id` = '$id' ; ";
 										
-	$educations_result = mysqli_query($connection,$educations_query);
+	$users_result = mysqli_query($connection,$users_query);
 
-	if($educations_result){
+	if($users_result){
+		
 		
 		$_SESSION['signup_users'] = NULL;
  		unset($_SESSION['signup_users']);
@@ -43,7 +43,7 @@ if(isset($_POST['go_register'])){
     
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
-        <select class="form-control" type="text" name="education_level">
+        <select class="form-control" type="text" name="job_kind">
             	<option>فرقی نمیکند</option>
                 <option>پاره وقت</option>
                 <option>تمام وقت</option>
@@ -55,13 +55,37 @@ if(isset($_POST['go_register'])){
   
   <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
-        <select class="form-control" name="province_id" id="province">
-      	<option value="-1">در استان خودم فقط مایل به کار هستم</option>
+        <select class="form-control" name="province_id_2" id="province">
+      	<option value="0">در استان خودم فقط مایل به کار هستم</option>
         <?php echo $provinces; ?>
       	</select>
         <span class="input-group-addon">کار در استانی دیگر</span>
     </div>
   </div>
+  
+  <div class="col-md-6 col-md-push-6 margin-bottom-20">
+    <div class="input-group">
+        <select class="form-control" type="text" name="job_state">
+            	<option>بیکار</option>
+                <option>سر کار میروم</option>
+       </select>
+        <span class="input-group-addon">وضعیت شغلی کنونی</span>
+    </div>
+  </div>
+  
+  <div class="col-md-6 col-md-pull-6 margin-bottom-20">
+    <div class="input-group">
+        <select class="form-control" type="text" name="salary">
+        		<option>توافقی</option>
+            	<option>تا 1 میلیون تومان</option>
+                <option>تا 1.5 میلیون تومان</option>
+                <option>تا 2 میلیون تومان</option>
+                <option>بیش از 2 میلیون تومان</option>
+       </select>
+        <span class="input-group-addon">میزان حقوق درخواستی</span>
+    </div>
+  </div>
+  
   
     <div class="col-xs-12 text-center margin-bottom-20">
         <input type="submit" name="go_register" class="btn btn-warning submit " value="تایید و ورود به پروفایل " >
