@@ -29,7 +29,7 @@ if(isset($_POST['go_register'])){
             <input class="form-control faal" type="text" name="activation_code" tabindex="1" autofocus>
         </div>  
     </div>
-    <div class="col-xs-12 text-center">
+    <div class="col-xs-12 text-center margin-bottom-20">
         <input type="submit" name="go_register" class="btn btn-warning submit " value="تایید و ادامه" tabindex="2" >
     </div>
 </form>
