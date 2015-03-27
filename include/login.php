@@ -2,20 +2,20 @@
   $error = '';
   if(isset($_POST['go_login'])){
 	  
-	  $activation_code = $_POST['activation_code'];
+	  $melli_code = $_POST['melli_code'];
+	  $password = sha1($_POST['password']);
 	  
-	  $activation_query = "SELECT * FROM users WHERE activation_code = '$activation_code' LIMIT 1 ; ";
-	  $activation_result = mysqli_query($connection,$activation_query);
-	  $activation_row = mysqli_fetch_assoc($activation_result);
+	  $login_query = "SELECT * FROM users WHERE melli_code = '$melli_code' AND password = '$password' LIMIT 1 ; ";
+	  $login_result = mysqli_query($connection,$login_query);
+	  $login_row = mysqli_fetch_assoc($login_result);
   
-	  if(isset($activation_row['activation_code']) && $activation_row['register_date'] == 0){
+	  if(isset($login_row['id'])){
 		  
-		  $_SESSION['signup_users'] = 2;
-		  $_SESSION['user_id'] = $activation_row['id'];
-		  header('Location: ?page=signup');
+		  $_SESSION['active_user_id'] = $id;
+		  header('Location: ?page=profile');
 		  
 	  }else{
-			  $error = CODE_FAALSAZI;
+			  $error = LOGIN_FAILED;
 	  }
   
   }
@@ -90,6 +90,10 @@
                 <input type="submit" name="go_login" class="btn btn-warning submit " value="ورود" tabindex="3" >
             </div>
         </form>
+        <ul>
+            <li style="display:block"><a href="?page=signup"><i class="fa fa-user"></i> ثبت نام </a></li>
+            <li style="display:block"><a href="?page=remember"><i class="fa fa-question"></i> فراموشی کلمه عبور </a></li>
+        </ul>
         </div>
     </div>
 </div>
