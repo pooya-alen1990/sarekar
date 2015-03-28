@@ -61,7 +61,7 @@
              
             </div>
             <div class="item">
-              <img src="images/slider/pic3.jpg">
+              <img src="images/slider/pic2.jpg">
               
             </div>
           </div>

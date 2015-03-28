@@ -293,6 +293,7 @@ div.footer .col.col-social-icons i {
 	background-color:#fff;
 }
 .profile{
+	border-top: 1px solid #36B3E0;
 	box-shadow:0 0 3px #ccc;
 	border-radius:4px;
 	background-color:#fff;
@@ -302,20 +303,23 @@ h3.title{
 	width: 100%;
 	color:#fff;
 	border-top: 1px solid #36B3E0;
+	border-bottom:1px solid #36B3E0;
 	box-shadow: 0px 1px 0px #1099C0 inset;
 	background: linear-gradient(to bottom, #37B3E0 0px, #0A92D7 100%) repeat scroll 0% 0% transparent;
 	}
-.upload {
-    width: 100%;
-    height: 57px;
-    background-color: rgba(255, 137, 0, 0.9);
-    overflow: hidden;
-	
-}
-div.upload input {
-    display: block !important;
-    width: 100% !important;
-    height: 57px !important;
-    opacity: 0.4 !important;
-    overflow: hidden !important;
-}
+
+.detail{
+	font-size:16px;
+	}
+a.edit{
+	font-size:14px;
+	}
+a.add{
+	padding-top:3px;
+	font-size:15px;
+	padding-left:10px;
+	color:#fff;
+	}
+.img-personaly{
+	padding-top:10px;
+	}
