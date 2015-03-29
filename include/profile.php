@@ -96,7 +96,7 @@
       </div>
       <div class="modal-footer">
         
-        <input type="submit" class="btn btn-primary submit" value="ویرایش اطلاعات">
+        <input type="submit" class="btn btn-default submit" value="ویرایش اطلاعات">
       </div>
     </div>
   </div>
