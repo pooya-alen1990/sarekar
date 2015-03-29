@@ -33,7 +33,7 @@
         </div>
         <div class="col-md-9 top-header">
         	<ul>
-            	<li><a href="?page=signup"><i class="fa fa-user"></i> ثبت نام </a></li>
+            	<li><a href="?page=signup"><i class="fa fa-user-plus"></i> ثبت نام </a></li>
                 <li><a href="?page=login"><i class="fa fa-sign-in"></i> ورود </a></li>
             </ul>
             <h3>اولین وب سایت استخدام در کل کشور</h3>
@@ -63,10 +63,10 @@
         <button type="submit" class="btn btn-default submit">جستجو</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li class="pull-right"><a href="#">صفحه اصلی</a></li>
+        <li class="pull-right"><a href="?page=home">صفحه اصلی</a></li>
         <li class="pull-right"><a href="#">کارجو</a></li>
         <li class="pull-right"><a href="#">کارفرما</a></li>
-        <li class="pull-right"><a href="#">درباره ما</a></li>
+        <li class="pull-right"><a href="?page=about">درباره ما</a></li>
         <li class="pull-right"><a href="?page=contact">تماس با ما</a></li>
         
       </ul>
