@@ -88,7 +88,7 @@ border-top: 1px solid #FFF;
 padding-bottom: 5px;
 background-color:rgba(255,137,0,0.3);
 	}
-.navbar-nav li{
+.navbar-nav li.bg{
 	background: url("../images/menu_sep.png") no-repeat scroll left center transparent;	
 	}
 .navbar-nav{

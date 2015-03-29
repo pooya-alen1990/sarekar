@@ -63,10 +63,10 @@
         <button type="submit" class="btn btn-default submit">جستجو</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li class="pull-right"><a href="?page=home">صفحه اصلی</a></li>
-        <li class="pull-right"><a href="#">کارجو</a></li>
-        <li class="pull-right"><a href="#">کارفرما</a></li>
-        <li class="pull-right"><a href="?page=about">درباره ما</a></li>
+        <li class="pull-right bg"><a href="?page=home">صفحه اصلی</a></li>
+        <li class="pull-right bg"><a href="#">کارجو</a></li>
+        <li class="pull-right bg"><a href="#">کارفرما</a></li>
+        <li class="pull-right bg"><a href="?page=about">درباره ما</a></li>
         <li class="pull-right"><a href="?page=contact">تماس با ما</a></li>
         
       </ul>
