@@ -13,7 +13,7 @@
 		}
 ?>
 <div class="col-md-4">
-    	<div class="panel panel-default">
+    	<div class="panel panel-default border">
           <div class="panel-heading">
             <h3 class="panel-title text-center">آخرین کارجویان</h3>
           </div>
@@ -21,11 +21,11 @@
             <?php echo $last_users; ?>
           </div>
         </div>
-        <div>
+        <div class="border">
         <img src="images/sidebar1.jpg" class="img-responsive">
         </div>
         
-        <div class="panel panel-default stat">
+        <div class="panel panel-default stat border">
           <div class="panel-heading">
             <h2 class="panel-title text-center">آمار سایت</h2>
             
