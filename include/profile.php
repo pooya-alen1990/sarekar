@@ -12,7 +12,13 @@
     
 	<div class="col-md-8 profile">
     	<div class="col-sm-3 img-personaly" dir="ltr">
-        	<img src="images/personaly/pic1.png" class="img-responsive img-thumbnail" style="margin:auto">
+        <?php
+		if($users_fetch_row['picture']){
+        	echo "<img src='images/personaly/$users_fetch_row[picture]' class='img-responsive img-thumbnail' style='margin:auto'>";
+		}else{
+			echo "<img src='images/personaly/profile.png' class='img-responsive img-thumbnail' style='margin:auto'>";
+			}
+        ?>   
             <div  class="upload">
             <form method="post" enctype="multipart/form-data">
             	<input type="file">
