@@ -1,3 +1,9 @@
+<?php
+	$user_id = $_SESSION['active_user_id'];
+	$users_fetch_query = " SELECT * FROM `users` WHERE `id` = '$user_id' LIMIT 1 ; " ;
+	$users_fetch_result = mysqli_query($connection,$users_fetch_query);
+	$users_fetch_row = mysqli_fetch_assoc($users_fetch_result);
+?>
 <div class="home">
 	<?php include 'left_nav.php'; ?>
     
@@ -11,7 +17,7 @@
             </div>
         </div>
         <div class="col-sm-9">
-        	<h2>مهرداد پارسا</h2>
+        	<h2><?php echo $users_fetch_row['first_name'].' '.$users_fetch_row['last_name']; ?></h2>
         </div>
         <div class="clearfix"></div>
         <div class="row">
@@ -20,14 +26,14 @@
         	<a href="#" class="edit" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i> ویرایش اطلاعات </a>
         </div>
         <div class="col-sm-5">
-        	<h4>وضعیت تاهل : <span class="detail">مجرد</span></h4>
-            <h4>وضعیت سربازی : <span class="detail">نرفته ام</span></h4>	
+        	<h4>وضعیت تاهل : <span class="detail"><?php echo $users_fetch_row['marriage_state']; ?></span></h4>
+            <h4>وضعیت سربازی : <span class="detail"><?php echo $users_fetch_row['soldiering_state']; ?></span></h4>	
         </div>
         <div class="col-sm-5">
-          <h4>نام و نام خانوادگی : <span class="detail">مهرداد پارسانژاد</span></h4>
-          <h4>کد ملی : <span class="detail">0011171189</span></h4>
-          <h4>مذهب : <span class="detail">اسلام</span></h4>
-          <h4>جنسیت : <span class="detail">مرد</span></h4>
+          <h4>نام و نام خانوادگی : <span class="detail"><?php echo $users_fetch_row['first_name'].' '.$users_fetch_row['last_name']; ?></span></h4>
+          <h4>کد ملی : <span class="detail"><?php echo $users_fetch_row['melli_code']; ?></span></h4>
+          <h4>مذهب : <span class="detail"><?php echo $users_fetch_row['religion']; ?></span></h4>
+          <h4>جنسیت : <span class="detail"><?php echo $users_fetch_row['gender']; ?></span></h4>
           
         </div>
         </div>

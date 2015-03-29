@@ -11,7 +11,7 @@
   
 	  if(isset($login_row['id'])){
 		  
-		  $_SESSION['active_user_id'] = $id;
+		  $_SESSION['active_user_id'] = $login_row['id'];
 		  header('Location: ?page=profile');
 		  
 	  }else{
