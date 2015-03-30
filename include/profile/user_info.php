@@ -56,7 +56,7 @@ if(isset($_POST['go_register'])){
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> &times; </span></button>
-        <h4 class="modal-title" id="myModalLabel"> ویرایش اطلاعات تماس </h4>
+        <h4 class="modal-title" id="myModalLabel"> ویرایش اطلاعات شخصی </h4>
       </div>
       <div class="modal-body">
         
@@ -94,8 +94,11 @@ if(isset($_POST['go_register'])){
   <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
         <select class="form-control" type="text" name="religion">
-            	<option>اسلام</option>
-                <option>مسیحیت</option>
+            	<option <?php echo ($users_fetch_row['religion']=='اسلام')?"selected":"" ;?>>اسلام</option>
+                <option <?php echo ($users_fetch_row['religion']=='مسیحیت')?"selected":"" ;?>>مسیحیت</option>
+                <option <?php echo ($users_fetch_row['religion']=='زرتشت')?"selected":"" ;?>>زرتشت</option>
+                <option <?php echo ($users_fetch_row['religion']=='یهودیت')?"selected":"" ;?>>یهودیت</option>
+                <option <?php echo ($users_fetch_row['religion']=='سایر')?"selected":"" ;?>>سایر</option>
        </select>
         <span class="input-group-addon">مذهب</span>
     </div>
@@ -104,8 +107,8 @@ if(isset($_POST['go_register'])){
    <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
         <select class="form-control" type="text" name="gender">
-            	<option>مرد</option>
-                <option>زن</option>
+            	<option <?php echo ($users_fetch_row['gender']=='مرد')?"selected":"" ;?>>مرد</option>
+                <option <?php echo ($users_fetch_row['gender']=='زن')?"selected":"" ;?>>زن</option>
         </select>
         <span class="input-group-addon">جنسیت</span>
     </div>
@@ -114,8 +117,8 @@ if(isset($_POST['go_register'])){
    <div class="col-md-6 col-md-push-6 margin-bottom-20">
     <div class="input-group">
         <select class="form-control" type="text" name="marriage_state">
-            	<option>مجرد</option>
-                <option>متاهل</option>
+            	<option <?php echo ($users_fetch_row['marriage_state']=='مجرد')?"selected":"" ;?>>مجرد</option>
+                <option <?php echo ($users_fetch_row['marriage_state']=='متاهل')?"selected":"" ;?>>متاهل</option>
        </select>
         <span class="input-group-addon">وضعیت تاهل</span>
     </div>
@@ -124,9 +127,13 @@ if(isset($_POST['go_register'])){
    <div class="col-md-6 col-md-pull-6 margin-bottom-20">
     <div class="input-group">
         <select class="form-control" type="text" name="soldiering_state">
-            	<option>رفته ام</option>
-                <option>معاف</option>
-                <option>نرفته ام</option>
+            	<option <?php echo ($users_fetch_row['soldiering_state']=='رفته ام')?"selected":"" ;?>>رفته ام</option>
+                <option <?php echo ($users_fetch_row['soldiering_state']=='غایب')?"selected":"" ;?>>غایب</option>
+                <option <?php echo ($users_fetch_row['soldiering_state']=='در حال خدمت')?"selected":"" ;?>>در حال خدمت</option>
+                <option <?php echo ($users_fetch_row['soldiering_state']=='مشمول خدمت')?"selected":"" ;?>>مشمول خدمت</option>
+                <option <?php echo ($users_fetch_row['soldiering_state']=='معافیت پزشکی')?"selected":"" ;?>>معافیت پزشکی</option>
+                <option <?php echo ($users_fetch_row['soldiering_state']=='معافیت کفالت')?"selected":"" ;?>>معافیت کفالت</option>
+                <option <?php echo ($users_fetch_row['soldiering_state']=='معافیت تحصیلی')?"selected":"" ;?>>معافیت تحصیلی</option>
         </select>
         <span class="input-group-addon">خدمت سربازی</span>
     </div>

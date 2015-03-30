@@ -68,6 +68,9 @@ if(isset($_POST['go_register'])){
         <select class="form-control" type="text" name="religion">
             	<option>اسلام</option>
                 <option>مسیحیت</option>
+                <option>زرتشت</option>
+                <option>یهودیت</option>
+                <option>سایر</option>
        </select>
         <span class="input-group-addon">مذهب</span>
     </div>
@@ -97,8 +100,12 @@ if(isset($_POST['go_register'])){
     <div class="input-group">
         <select class="form-control" type="text" name="soldiering_state">
             	<option>رفته ام</option>
-                <option>معاف</option>
-                <option>نرفته ام</option>
+                <option>غایب</option>
+                <option>در حال خدمت</option>
+                <option>مشمول خدمت</option>
+                <option>معافیت پزشکی</option>
+                <option>معافیت کفالت</option>
+                <option>معافیت تحصیلی</option>
         </select>
         <span class="input-group-addon">خدمت سربازی</span>
     </div>
