@@ -11,24 +11,23 @@ while($provinces_row = mysqli_fetch_assoc($provinces_result)){
 	
 if(isset($_POST['go_register'])){
 	
-	$id = $_SESSION['user_id'];
+	$id = $_SESSION['active_user_id'];
 	
 	$mobile = $_POST['mobile'];
 	$tel = $_POST['tel'];
 	$address = $_POST['address'];
 	$email = $_POST['email'];
 	$website = $_POST['website'];
-	$city_id = $_POST['city_id'];
+	//$city_id = $_POST['city_id'];
 	
 	$users_query = "UPDATE `users` SET `mobile`='$mobile',`tel`='$tel',`address`='$address',`email`='$email',
-													`website`='$website',`city_id`='$city_id' WHERE `id` = '$id' ; ";
+													`website`='$website' WHERE `id` = '$id' ; ";
 										
 	$users_result = mysqli_query($connection,$users_query);
 
 	if($users_result){
 		
-		$_SESSION['signup_users'] = 4;
-		header('Location: ?page=signup');
+		$error = SIGNUP_SUCCESS;
 		
 	}else{
 		$error = SIGNUP_FAILED;
@@ -39,6 +38,7 @@ if(isset($_POST['go_register'])){
 	
 	$contact_info_query = " SELECT users.mobile,users.website,users.tel,users.email,users.address,city.name AS city_name , province.name AS province_name FROM `users` INNER JOIN city ON users.city_id = city.id INNER JOIN
 							province ON city.province = province.id WHERE users.id = '$user_id' LIMIT 1 ; " ;
+
 	$contact_info_result = mysqli_query($connection,$contact_info_query);
 	$contact_info_row = mysqli_fetch_assoc($contact_info_result);
 
@@ -61,6 +61,7 @@ if(isset($_POST['go_register'])){
         <div class="col-xs-12">
         	<h4>آدرس : <span class="detail"><?php echo $contact_info_row['address']; ?></span></h4>
         </div>
+        <?php echo $error; ?>
 </div>
 
 <!-- Modal -->
@@ -78,37 +79,37 @@ if(isset($_POST['go_register'])){
                 
               <div class="col-md-6 col-md-push-6 margin-bottom-20">
                 <div class="input-group">
-                    <input type="text" class="form-control" name="mobile" required autofocus>
+                    <input type="text" class="form-control" value="<?php echo $contact_info_row['mobile']; ?>" name="mobile" required autofocus>
                     <span class="input-group-addon">موبایل</span>
                 </div>
               </div>
               
                <div class="col-md-6 col-md-pull-6 margin-bottom-20">
                 <div class="input-group">
-                    <input type="text" class="form-control"  name="tel" required>
+                    <input type="text" class="form-control" value="<?php echo $contact_info_row['tel']; ?>"  name="tel" required>
                     <span class="input-group-addon">تلفن</span>
                 </div>
               </div>
               
               <div class="col-md-6 col-md-push-6 margin-bottom-20">
                 <div class="input-group">
-                    <input type="text" class="form-control"  name="website" required>
+                    <input type="text" class="form-control" value="<?php echo $contact_info_row['website']; ?>"  name="website" required>
                     <span class="input-group-addon">وب سایت</span>
                 </div>
               </div>
               
               <div class="col-md-6 col-md-pull-6 margin-bottom-20">
                 <div class="input-group">
-                    <input type="email" class="form-control"  name="email" required>
+                    <input type="email" class="form-control" value="<?php echo $contact_info_row['email']; ?>"  name="email" required>
                     <span class="input-group-addon">ایمیل</span>
                 </div>
               </div>
             
-              <div class="col-md-6 col-md-push-6 margin-bottom-20">
+              <!--<div class="col-md-6 col-md-push-6 margin-bottom-20">
                 <div class="input-group">
                     <select class="form-control" name="province_id" id="province">
                     <option value="-1">استان را انتخاب کنید</option>
-                    <?php echo $provinces; ?>
+                    <?php //echo $provinces; ?>
                     </select>
                     <span class="input-group-addon">استان</span>
                 </div>
@@ -120,11 +121,11 @@ if(isset($_POST['go_register'])){
                     </select>
                     <span class="input-group-addon">شهر</span>
                 </div>
-              </div>
+              </div>-->
               
               <div class="col-md-12 margin-bottom-20">
                 <div class="input-group">
-                    <input type="text" class="form-control" name="address" required>
+                    <input type="text" class="form-control" value="<?php echo $contact_info_row['address']; ?>" name="address" required>
                     <span class="input-group-addon">آدرس</span>
                 </div>
               </div>
@@ -141,7 +142,7 @@ if(isset($_POST['go_register'])){
       </div>
     </div>
   </div>
-</div> 
+</div>
 <script>
 	$("#province").change(function(){
 		val = $("#province").val();

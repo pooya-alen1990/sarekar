@@ -1,8 +1,8 @@
 <?php
-define('CONTRACT_SUCCESSFUL' , "<div class='col-sm-12'>
+define('SIGNUP_SUCCESS' , "<div class='col-sm-12'>
 									<div class='alert alert-success alert-dismissable'>
 									  <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-									  ثبت قرارداد با موفقیت انجام شد.
+									  ویرایش اطلاعات شما با موفقیت انجام شد.
 									</div>
 								</div>");
 								
