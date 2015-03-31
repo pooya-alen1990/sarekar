@@ -1,4 +1,8 @@
 <?php
+	if(!isset($_SESSION['active_user_id']) && !isset($_GET['id'])){
+		header("Location: ?page=login");
+		die();
+		}
 	$user_id = $_SESSION['active_user_id'];
 	
 	$users_fetch_query = " SELECT * FROM `users` WHERE `id` = '$user_id' LIMIT 1 ; " ;
