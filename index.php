@@ -96,8 +96,9 @@
     <div class="col-md-10 col-md-offset-1" style="padding:0 17px;">
 		<div class="header-bottom">
         	<ul>
-            	<li><a href="#">راهنما</a></li>
-                <li><a href="#">نقشه سایت</a></li>
+            	<li class="border-left"><a href="#">راهنما</a></li>
+                <li class="border-left"><a href="#">نقشه سایت</a></li>
+                <li><a href="#">نحوه خرید کارت</a></li>
                 <li class="pull-left"><a><i class="fa fa-users"></i> تعداد کارجو : 1000 نفر</a></li>
                 
                 

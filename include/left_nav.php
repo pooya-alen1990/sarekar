@@ -21,7 +21,7 @@
             <?php echo $last_users; ?>
           </div>
         </div>
-        <div class="border">
+        <div>
         <img src="images/sidebar1.jpg" class="img-responsive">
         </div>
         
