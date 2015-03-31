@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2015 at 04:43 PM
+-- Generation Time: Mar 31, 2015 at 10:48 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -613,16 +613,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `about_me` text NOT NULL,
   `register_date` bigint(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `activation_code`, `first_name`, `last_name`, `melli_code`, `password`, `religion`, `gender`, `soldiering_state`, `marriage_state`, `picture`, `birthday`, `mobile`, `tel`, `address`, `email`, `website`, `job_state`, `job_kind`, `salary`, `province_id_2`, `city_id`, `about_me`, `register_date`) VALUES
-(1, '1234', 'پویا', 'صبرآموز', '1234567', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'اسلام', 'مرد', 'رفته ام', 'مجرد', '', 0, '', '', '', '', '', '', '', '0', 0, 0, '', 0),
-(2, '12345', 'thdfh', 'fgh', '123', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'اسلام', 'مرد', 'رفته ام', 'مجرد', '', 0, '124', '12412', 'dfhdfhdfhd', 'pooya.alen1990@gmail.com', 'htto', '', '', '0', 0, 121, '', 0),
-(3, '123456', 'پویا', 'رستمی', '09361946269', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'اسلام', 'مرد', 'رفته ام', 'مجرد', '', 0, '09361946269', '09361946269', 'ند', 'pooya_alen1990@yahoo.com', 'rayweb.ir', 'بیکار', 'فرقی نمیکند', 'توافقی', 0, 87, '', 1427466776);
+(1, '1234', 'پویا', 'صبرآموز', '1234567', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'اسلام', 'مرد', 'رفته ام', 'مجرد', '', 0, '', '', '', '', '', '', '', '0', 0, 88, '', 1427466776),
+(2, '12345', 'مهرداد', 'پارسا', '123', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'اسلام', 'زن', 'در حال خدمت', 'متاهل', 'pic1.png', 0, '123435', '444444', 'پونک', 'qwqw@wsd.com', 'barincard.ir', '', '', '0', 0, 12, '', 1427466776),
+(3, '123456', 'پویا', 'رستمی', '09361946269', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'اسلام', 'مرد', 'رفته ام', 'مجرد', '', 0, '09361946269', '09361946269', 'ند', 'pooya_alen1990@yahoo.com', 'rayweb.ir', 'بیکار', 'فرقی نمیکند', 'توافقی', 0, 87, '', 1427466776),
+(4, '1233', 'علی', 'عباسی', '1234', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'اسلام', 'زن', 'در حال خدمت', 'متاهل', 'pic1.png', 0, 'qw', 'qw', 'پونک', 'qwqw@wsd.com', 'qwqw', '', '', '0', 0, 87, '', 1427466776),
+(5, '12344', 'امیر', 'موسوی', '123345', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'اسلام', 'مرد', 'در حال خدمت', 'متاهل', 'pic1.png', 0, 'qw', 'qw', 'پونک', 'qwqw@wsd.com', 'qwqw', '', '', '0', 0, 87, '', 1427466776);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
