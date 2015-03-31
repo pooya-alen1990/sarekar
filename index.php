@@ -33,8 +33,17 @@
         </div>
         <div class="col-md-9 top-header">
         	<ul>
-            	<li><a href="?page=signup"><i class="fa fa-user-plus"></i> ثبت نام </a></li>
-                <li><a href="?page=login"><i class="fa fa-sign-in"></i> ورود </a></li>
+            <?php
+				if(!isset($_SESSION['active_user_id'])){
+					echo '
+					<li><a href="?page=signup"><i class="fa fa-user-plus"></i> ثبت نام </a></li>
+					<li><a href="?page=login"><i class="fa fa-sign-in"></i> ورود </a></li>';
+					
+				}else{
+					echo '
+					<li><a href="logout.php"><i class="fa fa-sign-out"></i> خروج </a></li>';
+					}
+			?>
             </ul>
             <h3>اولین وب سایت استخدام در کل کشور</h3>
             <h5>با مجوز رسمی وزرات کار، تعاون و تامین اجتماعی</h5>
