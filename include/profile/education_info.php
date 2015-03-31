@@ -14,14 +14,14 @@
         	<a href='#' class='edit'><i class='fa fa-edit'></i> ویرایش اطلاعات </a>
         </div>
 			<div class='col-sm-5'>
-				<h4>نام دانشگاه : <span class='detail'>$education_info_row[education_university]</span></h4>
-				<h4>گرایش : <span class='detail'>$education_info_row[education_sub_branch]</span></h4>	
-				<h4>سال فارغ التحصیلی : <span class='detail'>$education_info_row[education_graduation_date]</span></h4>
+				<h4 class='title-info'>نام دانشگاه : <span class='detail'>$education_info_row[education_university]</span></h4>
+				<h4 class='title-info'>گرایش : <span class='detail'>$education_info_row[education_sub_branch]</span></h4>	
+				<h4 class='title-info'>سال فارغ التحصیلی : <span class='detail'>$education_info_row[education_graduation_date]</span></h4>
 			</div>
 			<div class='col-sm-5'>
-			  <h4>مقطع تحصیلی : <span class='detail'>$education_info_row[education_level]</span></h4>
-			  <h4>رشته : <span class='detail'>$education_info_row[education_branch]</span></h4>
-			  <h4>معدل : <span class='detail'>$education_info_row[education_average]</span></h4>
+			  <h4 class='title-info'>مقطع تحصیلی : <span class='detail'>$education_info_row[education_level]</span></h4>
+			  <h4 class='title-info'>رشته : <span class='detail'>$education_info_row[education_branch]</span></h4>
+			  <h4 class='title-info'>معدل : <span class='detail'>$education_info_row[education_average]</span></h4>
 			</div>
         
         <div class='clearfix'></div>

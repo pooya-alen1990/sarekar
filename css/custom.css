@@ -310,6 +310,7 @@ h3.title{
 
 .detail{
 	font-size:16px;
+	color:#333 !important;
 	}
 a.edit{
 	font-size:14px;
@@ -338,4 +339,8 @@ border: 1px solid #36B3E0;
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
 	border-image: none;
+	}
+h4.title-info{
+	color:#888 !important;
+	font-size:16px !important;
 	}
