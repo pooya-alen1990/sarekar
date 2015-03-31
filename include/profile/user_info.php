@@ -36,14 +36,14 @@ if(isset($_POST['user'])){
                 <a href="#" class="edit" data-toggle="modal" data-target="#user_info"><i class="fa fa-edit"></i> ویرایش اطلاعات </a>
             </div>
             <div class="col-sm-5">
-                <h4>وضعیت تاهل : <span class="detail"><?php echo $users_fetch_row['marriage_state']; ?></span></h4>
-                <h4>وضعیت سربازی : <span class="detail"><?php echo $users_fetch_row['soldiering_state']; ?></span></h4>	
+                <h4 class="title-info">وضعیت تاهل : <span class="detail"><?php echo $users_fetch_row['marriage_state']; ?></span></h4>
+                <h4 class="title-info">وضعیت سربازی : <span class="detail"><?php echo $users_fetch_row['soldiering_state']; ?></span></h4>	
             </div>
             <div class="col-sm-5">
-              <h4>نام و نام خانوادگی : <span class="detail"><?php echo $users_fetch_row['first_name'].' '.$users_fetch_row['last_name']; ?></span></h4>
-              <h4>کد ملی : <span class="detail"><?php echo $users_fetch_row['melli_code']; ?></span></h4>
-              <h4>مذهب : <span class="detail"><?php echo $users_fetch_row['religion']; ?></span></h4>
-              <h4>جنسیت : <span class="detail"><?php echo $users_fetch_row['gender']; ?></span></h4>
+              <h4 class="title-info">نام و نام خانوادگی : <span class="detail"><?php echo $users_fetch_row['first_name'].' '.$users_fetch_row['last_name']; ?></span></h4>
+              <h4 class="title-info">کد ملی : <span class="detail"><?php echo $users_fetch_row['melli_code']; ?></span></h4>
+              <h4 class="title-info">مذهب : <span class="detail"><?php echo $users_fetch_row['religion']; ?></span></h4>
+              <h4 class="title-info">جنسیت : <span class="detail"><?php echo $users_fetch_row['gender']; ?></span></h4>
               
             </div>
              <?php echo $error; ?>  
