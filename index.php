@@ -40,7 +40,15 @@
 					<li><a href="?page=login"><i class="fa fa-sign-in"></i> ورود </a></li>';
 					
 				}else{
+					
+					$user_login_id = $_SESSION['active_user_id'];
+	
+					$user_login_fetch_query = " SELECT * FROM `users` WHERE `id` = '$user_login_id' LIMIT 1 ; " ;
+					$user_login_fetch_result = mysqli_query($connection,$user_login_fetch_query);
+					$user_login_fetch_row = mysqli_fetch_assoc($user_login_fetch_result);
+					
 					echo '
+					<li><a href="?page=profile"> '.$user_login_fetch_row['first_name'].' '.$user_login_fetch_row['last_name'].' </a></li>
 					<li><a href="logout.php"><i class="fa fa-sign-out"></i> خروج </a></li>';
 					}
 			?>
