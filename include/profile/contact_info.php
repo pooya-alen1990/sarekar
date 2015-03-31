@@ -9,7 +9,7 @@ while($provinces_row = mysqli_fetch_assoc($provinces_result)){
 	}
 	
 	
-if(isset($_POST['go_register'])){
+if(isset($_POST['contact'])){
 	
 	$id = $_SESSION['active_user_id'];
 	
@@ -136,7 +136,7 @@ if(isset($_POST['go_register'])){
       </div>
       <div class="modal-footer">
             <div class="col-xs-12 text-center margin-bottom-20">
-                    <input type="submit" name="go_register" class="btn btn-warning submit " value="ویرایش" >
+                    <input type="submit" name="contact" class="btn btn-warning submit " value="ویرایش" >
             </div>
         </form>
       </div>

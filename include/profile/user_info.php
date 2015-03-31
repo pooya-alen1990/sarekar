@@ -1,6 +1,6 @@
 <?php
 $error = '';
-if(isset($_POST['go_register'])){
+if(isset($_POST['user'])){
 	
 	$id = $_SESSION['active_user_id'];
 	
@@ -145,7 +145,7 @@ if(isset($_POST['go_register'])){
       </div>
       <div class="modal-footer">
             <div class="col-xs-12 text-center margin-bottom-20">
-                    <input type="submit" name="go_register" class="btn btn-warning submit " value="ویرایش" >
+                    <input type="submit" name="user" class="btn btn-warning submit " value="ویرایش" >
             </div>
         </form>
       </div>
