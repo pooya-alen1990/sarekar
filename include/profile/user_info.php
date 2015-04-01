@@ -33,7 +33,11 @@ if(isset($_POST['user'])){
 <div class="row">
             <h3 class="title">اطلاعات شخصی</h3>
             <div class="col-sm-2" style="padding-left:0 !important">
-                <a href="#" class="edit" data-toggle="modal" data-target="#user_info"><i class="fa fa-edit"></i> ویرایش اطلاعات </a>
+            <?php
+			if(!$visit){
+                echo '<a href="#" class="edit" data-toggle="modal" data-target="#user_info"><i class="fa fa-edit"></i> ویرایش اطلاعات </a>';
+			}
+			?>
             </div>
             <div class="col-sm-5">
                 <h4 class="title-info">وضعیت تاهل : <span class="detail"><?php echo $users_fetch_row['marriage_state']; ?></span></h4>

@@ -42,11 +42,22 @@ if(isset($_POST['contact'])){
 	$contact_info_result = mysqli_query($connection,$contact_info_query);
 	$contact_info_row = mysqli_fetch_assoc($contact_info_result);
 
+	if($visit){
+		$contact_info_row['mobile'] = substr_replace($contact_info_row['mobile'],'**********',0);
+		$contact_info_row['tel'] = substr_replace($contact_info_row['tel'],'**********',0);
+		$contact_info_row['email'] = substr_replace($contact_info_row['email'],'**********',0);
+		$contact_info_row['website'] = substr_replace($contact_info_row['website'],'**********',0);
+		}
+
 ?>
 <div class="row">
         <h3 class="title">اطلاعات تماس</h3>
          <div class="col-sm-2" style="padding-left:0 !important">
-        	<a href="#" class="edit" data-toggle="modal" data-target="#contact_info"><i class="fa fa-edit"></i> ویرایش اطلاعات </a>
+         	<?php
+			if(!$visit){
+        		echo '<a href="#" class="edit" data-toggle="modal" data-target="#contact_info"><i class="fa fa-edit"></i> ویرایش اطلاعات </a>';
+			}
+            ?>
         </div>
         <div class="col-sm-5">
         	<h4 class="title-info">شهر : <span class="detail"><?php echo $contact_info_row['city_name']; ?></span></h4>

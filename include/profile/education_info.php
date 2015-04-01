@@ -5,13 +5,21 @@
 		
 ?>
 <div class="row">
-        	<h3 class="title">اطلاعات تحصیلی<a href="#" class="add pull-left"><i class="fa fa-plus"></i> اضافه کردن  </a></h3>
-            
+        <h3 class="title">اطلاعات تحصیلی
+<?php
+	  if(!$visit){
+		  echo '<a href="#" class="add pull-left"><i class="fa fa-plus"></i> اضافه کردن  </a>';
+	  }
+?>
+    	</h3>        
 <?php
 	while($education_info_row = mysqli_fetch_assoc($education_info_result)){ 
 	    echo " 
-        <div class='col-sm-2' style='padding-left:0 !important'>
-        	<a href='#' class='edit'><i class='fa fa-edit'></i> ویرایش اطلاعات </a>
+        <div class='col-sm-2' style='padding-left:0 !important'>";
+		if(!$visit){
+        	echo "<a href='#' class='edit'><i class='fa fa-edit'></i> ویرایش اطلاعات </a>";
+		}
+		echo "
         </div>
 			<div class='col-sm-5'>
 				<h4 class='title-info'>نام دانشگاه : <span class='detail'>$education_info_row[education_university]</span></h4>

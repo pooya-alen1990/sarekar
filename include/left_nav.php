@@ -8,7 +8,7 @@
 		$gender = 'female';	
 			}
 			$last_users_row['register_date'] = jdate("d F Y" , $last_users_row['register_date']);
-			$last_users .= "<p><i class='fa fa-$gender'></i><a href='#'> $last_users_row[first_name] $last_users_row[last_name] </a>
+			$last_users .= "<p><i class='fa fa-$gender'></i><a href='?page=profile&id=$last_users_row[id]'> $last_users_row[first_name] $last_users_row[last_name] </a>
 							</p><p align='left'>$last_users_row[register_date]</p>";
 		}
 ?>

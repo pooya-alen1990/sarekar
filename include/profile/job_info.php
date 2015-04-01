@@ -5,13 +5,21 @@
 		
 ?>
 <div class="row">
-        <h3 class="title">اطلاعات شغلی<a href="#" class="add pull-left"><i class="fa fa-plus"></i> اضافه کردن  </a></h3>
-
+	<h3 class="title">اطلاعات شغلی
+	<?php
+		if(!$visit){
+        	echo '<a href="#" class="add pull-left"><i class="fa fa-plus"></i> اضافه کردن  </a>';
+		}
+	?>
+	</h3>
 <?php
 	while($job_info_row = mysqli_fetch_assoc($job_info_result)){ 
 	    echo "   
-        <div class='col-sm-2' style='padding-left:0 !important'>
-        	<a href='#' class='edit'><i class='fa fa-edit'></i> ویرایش اطلاعات </a>
+        <div class='col-sm-2' style='padding-left:0 !important'>";
+		if(!$visit){
+        	echo "<a href='#' class='edit'><i class='fa fa-edit'></i> ویرایش اطلاعات </a>";
+		}
+		echo "
         </div>
         <div class='col-sm-5'>
         	<h4 class='title-info'>سمت : <span class='detail'>$job_info_row[job_position]</span></h4>
