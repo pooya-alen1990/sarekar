@@ -62,7 +62,7 @@ if(isset($_POST['contact'])){
         <div class="col-sm-5">
         	<h4 class="title-info">شهر : <span class="detail"><?php echo $contact_info_row['city_name']; ?></span></h4>
             <h4 class="title-info">موبایل : <span class="detail"><?php echo $contact_info_row['mobile']; ?></span></h4>	
-            <h4 class="title-info">وب سایت : <span class="detail"><a target="_blank" href="<?php echo $contact_info_row['website']; ?>"><?php echo $contact_info_row['website']; ?></a></span></h4>
+            <h4 class="title-info">وب سایت : <span class="detail"><a target="_blank" href="http://<?php echo $contact_info_row['website']; ?>"><?php echo $contact_info_row['website']; ?></a></span></h4>
         </div>
         <div class="col-sm-5">
           <h4 class="title-info">استان : <span class="detail"><?php echo $contact_info_row['province_name']; ?></span></h4>
