@@ -8,7 +8,10 @@
 <head>
     <meta charset="utf-8"/>
     <title>اولین وب سایت استخدام در کل کشور</title>
-    <meta name="description" content="">
+    <meta name="description" itemprop="description" content="بزرگترین مرجع اخبار استخدام و آگهی استخدامی در کل کشور، استخدام بانکها، اخبار و نتایج آزمونهای استخدامی، نمونه سوالات و جزوات استخدامی ، استخدام" />
+
+	<meta name="keywords" itemprop="keywords" content="ایران استخدام ,استخدام 94,استخدام , sarekar, نمونه سوالات استخدامی, hsjonhl, استخدام بانک, آگهی استخدام, سر کار, کار یاب, اشتغال, مرجع اخبار استخدام , استخدام مهندس ,استخدام کارشناس ,استخدام دیپلم ,استخدام بانک , پرتال دانشگاهی کشور ,استخدام دانشجو , استخدام عضو هیات علمی, استخدام خارج کشور ,استخدام برنامه نویس ,استخدام حسابدار, استخدام دولتی ,استخدام سراسر کشور" />
+    
     <meta name="author" content="rayweb.ir | شرکت طراحی وب سایت رای وب">
     <meta name="robots" content="index,follow"/>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"/>
@@ -54,9 +57,10 @@
 			?>
             </ul>
             <h3>اولین وب سایت استخدام در کل کشور</h3>
-            <h5>با مجوز رسمی وزرات کار، تعاون و تامین اجتماعی</h5>
+            <h5>با مجوز رسمی وزرات کار، تعاون و تامین اجتماعی</h5>  
         </div>
         <div class="clearfix"></div>
+        
         <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -100,8 +104,7 @@
                 <li class="border-left"><a href="#">نقشه سایت</a></li>
                 <li><a href="#">نحوه خرید کارت</a></li>
                 <li class="pull-left"><a><i class="fa fa-users"></i> تعداد کارجو : 1000 نفر</a></li>
-                
-                
+                <li class="pull-left"><a><i class="fa fa-calendar"></i> امروز : <?php echo jdate(" l d F Y "); ?></a></li>
             </ul>
         </div>
         </div>
