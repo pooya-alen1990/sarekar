@@ -155,6 +155,7 @@ if(isset($_POST['job_edit'])){
       <div class="modal-footer">
             <div class="col-xs-12 text-center margin-bottom-20">
                     <input type="submit" name="job_edit" class="btn btn-warning submit " value="ویرایش" >
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">انصراف</button>
             </div>
         </form>
       </div>
