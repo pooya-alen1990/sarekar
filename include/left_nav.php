@@ -13,6 +13,7 @@
 		}
 ?>
 <div class="col-md-4">
+	<img src="images/blue-ad.png" class="img-responsive">
     	<div class="panel panel-default border">
           <div class="panel-heading">
             <h3 class="panel-title text-center">آخرین کارجویان</h3>
