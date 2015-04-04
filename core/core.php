@@ -1,18 +1,25 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+date_default_timezone_set('Asia/Tehran');
+
 session_start();
 ob_start();
 
-//define("LOCAL_MODE" , 0);
-define("LOCAL_MODE" , 1);
+if($_SERVER['SERVER_ADDR'] == '127.0.0.1'){
+	define("LOCAL_MODE" , 1);
+	}else{
+	define("LOCAL_MODE" , 0);
+}
+
+
 
 ##### Configs ######
 if(LOCAL_MODE == 0){
 	define('HOST_NAME','localhost');
-	define('USER_NAME','rayweb');
-	define('PASSWORD','Rayweb1393');
-	define('DB_NAME','rayweb');
+	define('USER_NAME','sarekar');
+	define('PASSWORD','sarekar1394');
+	define('DB_NAME','sarekar');
 	$prefix = '';
 }else if(LOCAL_MODE == 1){
 	define('HOST_NAME','localhost');
